@@ -1,20 +1,22 @@
-import { StatusBar } from 'expo-status-bar';
-import { StyleSheet, Text, View } from 'react-native';
+import React, { useEffect } from "react";
+import Navigation from "./app/screens/navigations/Navigation";
+import { firebaseApp } from "./app/screens/utils/firebase";
+import firebase from "firebase/compat/app";
+//import { getAuth, onAuthStateChanged } from "firebase/auth";
+
+/*SOPORTE VERSIÓN 9 FIREBASE
+useEffect(() => {
+    const auth = getAuth(firebaseApp);
+    onAuthStateChanged(auth, user => {
+    console.log(user);
+    });
+  })*/
+
 
 export default function App() {
-  return (
-    <View style={styles.container}>
-      <Text>Open up App.js to start working on your app!</Text>
-      <StatusBar style="auto" />
-    </View>
-  );
+
+  
+
+  return <Navigation />;
 }
 
-const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    backgroundColor: '#fff',
-    alignItems: 'center',
-    justifyContent: 'center',
-  },
-});
