@@ -12,4 +12,7 @@ const firebaseConfig = {
   
   // Initialize Firebase
  // const app = initializeApp(firebaseConfig);
- export const firebaseApp = initializeApp(firebaseConfig);
+ //versión 9.0
+ //export const firebaseApp = initializeApp(firebaseConfig);
+
+ export const firebaseApp = firebase.initializeApp(firebaseConfig);
